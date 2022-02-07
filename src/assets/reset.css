@@ -1,0 +1,28 @@
+/* 把我们所有标签的内外边距清零 */
+* {
+  margin: 0;
+  padding: 0;
+  /* css3盒子模型 */
+  box-sizing: border-box;
+}
+html,
+body,#app {
+  height: 100%;
+  background:#F5F5F5;
+  font-family: PingFang SC;
+}
+img {
+  /* 取消图片底侧有空白缝隙的问题 */
+  vertical-align: middle;
+}
+
+/* 清除浮动 */
+.clearfix:after {
+  visibility: hidden;
+  clear: both;
+  display: block;
+  content: ".";
+  height: 0;
+}
+
+
